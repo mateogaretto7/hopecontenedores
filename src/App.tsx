@@ -78,7 +78,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
           <div className="flex-shrink-0 flex items-center gap-3">
-            <img src="https://picsum.photos/seed/hope-logo-final/100/100" alt="Logo" className="h-12 w-auto" referrerPolicy="no-referrer" />
+            <img src="C:\Users\mateo\OneDrive\Escritorio\logo-hope.jpg" alt="Logo" className="h-12 w-auto" referrerPolicy="no-referrer" />
             <span className="text-xl font-black tracking-tighter text-hope-black hidden sm:block">
               HOPE CONTENEDORES<span className="text-hope-orange">.</span>
             </span>
@@ -185,11 +185,12 @@ const Hero = () => {
           >
             <div className="relative rounded-[40px] overflow-hidden shadow-2xl aspect-[4/3] border-8 border-hope-white">
               <img 
-                src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&q=80&w=1200" 
+                src="/hope-principal.png" // <--- SACALE EL "public" Y DEJÁ LA BARRA
                 alt="Hope Contenedores Hero" 
                 className="object-cover w-full h-full"
                 referrerPolicy="no-referrer"
               />
+            </div>
             </div>
             <div className="absolute -bottom-10 -left-10 bg-hope-orange p-8 rounded-[32px] shadow-2xl hidden sm:block">
               <div className="flex items-center gap-4 text-hope-white">
@@ -522,7 +523,7 @@ const ContactSection = () => {
                 </a>
               </div>
               <p className="text-xs text-hope-black/40 uppercase tracking-widest font-bold">
-                © 2026 Moretto. Todos los derechos reservados.
+                © 2026 Hope Contenedores. Todos los derechos reservados.
               </p>
             </div>
           </div>
