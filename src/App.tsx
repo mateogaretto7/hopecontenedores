@@ -290,10 +290,10 @@ const Products = () => {
       title: "Línea Habitacional",
       icon: <Home className="w-6 h-6" />,
       items: ["Viviendas", "Quinchos", "Estudios"],
-      image: "https://images.unsplash.com/photo-1513584684374-8bdb74838a0f?auto=format&fit=crop&q=80&w=600",
+      image: "/vivienda.png",
       color: "bg-blue-500",
       longDescription: "Nuestra línea habitacional combina diseño moderno con la máxima eficiencia térmica. Transformamos contenedores en hogares acogedores, estudios luminosos o quinchos funcionales, listos para habitar en tiempo récord.",
-      details: [
+      details: [  
         "Aislación térmica en lana de vidrio o poliuretano inyectado.",
         "Revestimientos interiores en Durlock o madera tratada.",
         "Aberturas de aluminio de alta gama con vidrios DVH.",
@@ -301,7 +301,7 @@ const Products = () => {
         "Pisos flotantes de PVC de alto tránsito.",
         "Terminaciones exteriores personalizables."
       ]
-    },
+    }
     {
       title: "Línea Industrial",
       icon: <Briefcase className="w-6 h-6" />,
@@ -694,7 +694,7 @@ const Chatbot = () => {
           >
             {/* Header */}
             <div className="p-6 flex justify-between items-center bg-white">
-              <span className="font-bold text-lg text-hope-black">Hope Assistant</span>
+              <span className="font-bold text-lg text-hope-black">Tu asistente</span>
               <button onClick={() => setIsOpen(false)} className="text-hope-black/40 hover:text-hope-black transition-colors">
                 <ChevronDown size={24} />
               </button>
