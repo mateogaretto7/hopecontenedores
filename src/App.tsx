@@ -188,9 +188,8 @@ const Hero = () => {
                 src="/hope-principal.png" // <--- SACALE EL "public" Y DEJÁ LA BARRA
                 alt="Hope Contenedores Hero" 
                 className="object-cover w-full h-full"
-                referrerPolicy="no-referrer"
+                referrerPolicy="no-referrer"  
               />
-            </div>
             </div>
             <div className="absolute -bottom-10 -left-10 bg-hope-orange p-8 rounded-[32px] shadow-2xl hidden sm:block">
               <div className="flex items-center gap-4 text-hope-white">
