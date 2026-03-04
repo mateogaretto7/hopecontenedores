@@ -78,7 +78,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
           <div className="flex-shrink-0 flex items-center gap-3">
-            <img src="/logo-hope.jpg" alt="Logo" className="h-12 w-auto" referrerPolicy="no-referrer" />
+            <img src="/logo-hope.png" alt="Logo" className="h-12 w-auto" referrerPolicy="no-referrer" />
             <span className="text-xl font-black tracking-tighter text-hope-black hidden sm:block">
               HOPE CONTENEDORES<span className="text-hope-orange">.</span>
             </span>
