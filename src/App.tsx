@@ -301,7 +301,7 @@ const Products = () => {
         "Pisos flotantes de PVC de alto tránsito.",
         "Terminaciones exteriores personalizables."
       ]
-    }
+    },
     {
       title: "Línea Industrial",
       icon: <Briefcase className="w-6 h-6" />,
