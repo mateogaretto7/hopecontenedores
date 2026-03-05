@@ -227,7 +227,7 @@ const ProductDetailModal = ({ isOpen, onClose, product }: { isOpen: boolean; onC
           >
             <div className="relative h-64 sm:h-80 overflow-hidden">
               <img src={product.image} alt={product.title} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
-              <button onClick={onClose} className="absolute top-6 right-6 bg-hope-white p-2 rounded-full shadow-lg hover:bg-hope-orange hover:text-hope-white transition-all">
+              <button onClick={onClose} className="absolute top-4 right-4 sm:top-6 sm:right-6 z-50 bg-hope-white p-3 rounded-full shadow-lg hover:bg-hope-orange hover:text-hope-white transition-all touch-manipulation">
                 <X size={24} />
               </button>
               <div className="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-hope-black/60 to-transparent">
