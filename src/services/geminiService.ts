@@ -2,12 +2,11 @@ import { GoogleGenAI } from "@google/genai";
 
 export const getGeminiResponse = async (prompt: string, history: { role: string; parts: { text: string }[] }[]) => {
   try {
-    // Lee tu clave nueva desde Netlify de forma segura
     const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
     
     const response = await ai.models.generateContent({
-      // Usamos el modelo estable que funciona perfecto
-      model: "gemini-1.5-flash",
+      // Actualización estricta al modelo vigente
+      model: "gemini-2.5-flash",
       contents: [...history, { role: "user", parts: [{ text: prompt }] }],
       config: {
         systemInstruction: `Eres el Asistente de Ventas de IA de "Hope Contenedores", especializado en arquitectura modular y construcciones sostenibles basadas en contenedores.
