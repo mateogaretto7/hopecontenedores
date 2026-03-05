@@ -7,7 +7,7 @@ const ai = new GoogleGenAI({
 export const getGeminiResponse = async (prompt: string, history: { role: string; parts: { text: string }[] }[]) => {
   try {
     const response = await ai.models.generateContent({
-      model: "gemini-3-flash-preview",
+      model: "gemini-1.5-flash", 
       contents: [...history, { role: "user", parts: [{ text: prompt }] }],
       config: {
         systemInstruction: `Eres el representante comercial de preventa de "Hope Contenedores", una empresa de Esperanza, Santa Fe.
@@ -31,12 +31,12 @@ export const getGeminiResponse = async (prompt: string, history: { role: string;
         ESTRUCTURA DE RESPUESTA COMERCIAL IDEAL:
         1. Valida la necesidad.
         2. Recomienda la Línea exacta y da un beneficio clave.
-        3. Llamado a la acción (Cierre SIEMPRE OBLIGATORIO): "Para armarte un presupuesto a medida, contactá a nuestros vendedores por WhatsApp al +54 3496 445881 o al mail hopecontenedores@gmail.com".`,
+        3. Llamado a la acción (Cierre SIEMPRE OBLIGATORIO): "Para armarte un presupuesto a medida, contactá a Exequiel por WhatsApp al +54 3496 55-7841 o al mail hopecontenedores@gmail.com".`,
       },
     });
     return response.text;
   } catch (error) {
     console.error("Error calling Gemini:", error);
-    return "Lo siento, en este momento nuestros asesores están ocupados. Por favor, contactanos directamente por WhatsApp al +54 3496 445881 para que podamos pasarte un presupuesto.";
+    return "Lo siento, en este momento nuestros asesores están ocupados. Por favor, contactanos directamente por WhatsApp al +54 3496 55-7841 para que podamos pasarte un presupuesto.";
   }
 };
